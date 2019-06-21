@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>
+      This is a shitty website about routing.
+    </h1>
+
+    <p>Feeling lost?<br />Ya, I am too. Try "about"</p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "home",
-  components: {
-    HelloWorld
-  }
+  name: "home"
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
