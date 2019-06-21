@@ -117,7 +117,7 @@ button {
   &.ani-5 {
     animation-name: fade-in;
     animation-duration: 2s;
-    animation-delay: 0s; // 8
+    animation-delay: 8s; // 8
     animation-fill-mode: forwards;
   }
 }
